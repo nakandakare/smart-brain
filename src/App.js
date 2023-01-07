@@ -83,7 +83,7 @@ class App extends React.Component {
     app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
       .then(response => { 
         if(response) {
-          fetch('https://powerful-garden-44286.herokuapp.com/image', {
+          fetch('https://smart-brain-api-u3we.onrender.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
